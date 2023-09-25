@@ -57,7 +57,7 @@ The return value protein is a string of length **3𝑛**. A suggested structure 
   codon based on the three random integers. If the codon is one of three stop codons TAA, TAG, or TGA, discard it and re-generate a new codon.
 * Add your codon to the existing protein to reach the length of **3𝑛**. Add the new codon to the protein as:   `protein.append(new_codon)`
 
-** In your report file, generate a random protein that has 40 amino acids and attach the output of your code.**
+**In your report file, generate a random protein that has 40 amino acids and attach the output of your code.**
 
 ### 2. (70 points) Counting the occurrence of a given amino acid 
 
