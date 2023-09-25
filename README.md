@@ -4,15 +4,15 @@
 
 **All your answers should be in a single file named `answers_lab.py`, be careful with the names of your functions. Your report should be a self contained markdown file with a summary of your answers and the code copied inside of it.**
  
-A protein is composed of amino acids. There are a total of twenty amino acids which are known. The protein itself is represented by a string of these amino acid "names". The twenty amino acids are Alanine, Arginine, Asparagine, Aspartic Acid, Cysteine, Glutamic Acid, Glutamine, Glycine, Histidine, Isoleucine, Leucine, Lysine, Methionine, Phenylalanine, Proline, Serine, Threonine, Tryptophan, Tyrosine, and Valine.  A DNA molecule is a long chain compose of four different nucleotides: adenine (A), guanine (G), cytosine (C), and thymine (T). A gene is a DNA fragment that codes for a particular protein. Each amino acid is represented by a string of three letters (from A, G, C, and T) called a “codon”. So for a gene we might have a string like
+A protein is composed of amino acids. There are a total of twenty amino acids which are known. The protein itself is represented by a string of these amino acid "names". The twenty amino acids are Alanine, Arginine, Asparagine, Aspartic Acid, Cysteine, Glutamic Acid, Glutamine, Glycine, Histidine, Isoleucine, Leucine, Lysine, Methionine, Phenylalanine, Proline, Serine, Threonine, Tryptophan, Tyrosine, and Valine.  A DNA molecule is a long chain composed of four different nucleotides: adenine (A), guanine (G), cytosine (C), and thymine (T). A gene is a DNA fragment that codes for a particular protein. Each amino acid is represented by a string of three letters (from A, G, C, and T) called a “codon.” So, for a gene, we might have a string like
 
 <center>ATC-GTA-TTG-CAC-ATT-GCA</center>
 
-where we have added hyphens to demonstrate the amino acid combinations. Because the amino acids are denoted using the four symbols "A", "G", "C" and "T", there are $ 4^3 = 64 $ possible combinations because a letter can be repeated. However, there are only 20 amino acids, so there is some redundancy that just means that different codons (such as GCT, GCC, GCA, GCG) represent the same amino acid (such as alanine). In addition, three of the 64 combinations are used to tag a stop so there are 61 codons for the 20 amino acids.  At numerous websites such as
+Where we have added hyphens to demonstrate the amino acid combinations, because the amino acids are denoted using the four symbols "A", "G", "C" and "T", there are $4^3 = 64$ possible combinations because a letter can be repeated. However, there are only 20 amino acids, so there is some redundancy that just means that different codons (such as GCT, GCC, GCA, GCG) represent the same amino acid (such as alanine). In addition, three of the 64 combinations are used to tag a stop, so there are 61 codons for the 20 amino acids.  Numerous websites such as
 
 [http://www.cbs.dtu.dk/courses/27619/codon.html](http://www.cbs.dtu.dk/courses/27619/codon.html)
 
-you may find a table which associates the DNA codon with the corresponding amino acid. The table from the above link is given below.
+You may find a table that associates the DNA codon with the corresponding amino acid. The table from the above link is given below.
 
 | Amino Acid     | SLC  | Codons                       |
 | -------------- |-- | --------------------------------|
@@ -38,11 +38,11 @@ you may find a table which associates the DNA codon with the corresponding amino
 | Arginine       | R | CGT, CGC, CGA, CGG, AGA, AGG    |
 | Stop codons    | Stop | TAA, TAG, TGA                |
 
-**Table 1.** 20 Amino acis, their single-letter data-base codes (SLC) and  their correspnding DNA codons.
+**Table 1.** 20 Amino acids, their single-letter database codes (SLC) and  their corresponding DNA codons.
 
-###  1. (30 points) Generate  arandom protein
+###  1. (30 points) Generate  a random protein
 
-You function should have the structure:
+Your function should have the structure:
 ```python
 def generate_random_protein(n)
     #code
@@ -70,5 +70,5 @@ def frequency_amino_acid(protein, amino_acid):
 ```
 
 For example, if amino_acid=’Cysteine’, the `frequency_amino_acid()` function will search for
-the corresponding codons “TGT” and “TGC” in protein. If we found $ M_1 $ occurrence of codon TGT and
-$ M_2 $ occurrence of codon TGC, the total occurrences of “Cysteine” is $ M_1 + M_2 $, and the function should return $ M_1 + M_2 $. The 20 amino acids and their corresponding codons are given in Table 1. 
+the corresponding codons “TGT” and “TGC” in protein. If we found $M_1$ occurrence of codon TGT and
+$M_2$ occurrence of codon TGC, the total occurrences of “Cysteine” is $M_1 + M_2$, and the function should return $M_1 + M_2$. The 20 amino acids and their corresponding codons are given in Table 1. 
