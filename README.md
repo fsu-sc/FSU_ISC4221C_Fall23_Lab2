@@ -20,7 +20,7 @@ You may find a table that associates the DNA codon with the corresponding amino 
 | Leucine        | L | CTT, CTC, CTA, CTG, TTA, TTG    |
 | Valine         | V | GTT, GTC, GTA, GTG              |
 | Phenylalanine  | F | TTT, TTC                        |
-| Methionine     | A | TG                              |
+| Methionine     | A | ATG                             |
 | Cysteine       | C | TGT, TGC                        |
 | Alanine        | A | GCT, GCC, GCA, GCG              |
 | Glycine        | G | GGT, GGC, GGA, GGG              |
